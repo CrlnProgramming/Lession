@@ -1,0 +1,11 @@
+G:\FolderFP\Lessons\2\Classwork\ConsoleClasswork\ConsoleClasswork\bin\Debug\netcoreapp3.0\ConsoleClasswork.exe
+G:\FolderFP\Lessons\2\Classwork\ConsoleClasswork\ConsoleClasswork\bin\Debug\netcoreapp3.0\ConsoleClasswork.deps.json
+G:\FolderFP\Lessons\2\Classwork\ConsoleClasswork\ConsoleClasswork\bin\Debug\netcoreapp3.0\ConsoleClasswork.runtimeconfig.json
+G:\FolderFP\Lessons\2\Classwork\ConsoleClasswork\ConsoleClasswork\bin\Debug\netcoreapp3.0\ConsoleClasswork.runtimeconfig.dev.json
+G:\FolderFP\Lessons\2\Classwork\ConsoleClasswork\ConsoleClasswork\bin\Debug\netcoreapp3.0\ConsoleClasswork.dll
+G:\FolderFP\Lessons\2\Classwork\ConsoleClasswork\ConsoleClasswork\bin\Debug\netcoreapp3.0\ConsoleClasswork.pdb
+G:\FolderFP\Lessons\2\Classwork\ConsoleClasswork\ConsoleClasswork\obj\Debug\netcoreapp3.0\ConsoleClasswork.csprojAssemblyReference.cache
+G:\FolderFP\Lessons\2\Classwork\ConsoleClasswork\ConsoleClasswork\obj\Debug\netcoreapp3.0\ConsoleClasswork.AssemblyInfoInputs.cache
+G:\FolderFP\Lessons\2\Classwork\ConsoleClasswork\ConsoleClasswork\obj\Debug\netcoreapp3.0\ConsoleClasswork.AssemblyInfo.cs
+G:\FolderFP\Lessons\2\Classwork\ConsoleClasswork\ConsoleClasswork\obj\Debug\netcoreapp3.0\ConsoleClasswork.dll
+G:\FolderFP\Lessons\2\Classwork\ConsoleClasswork\ConsoleClasswork\obj\Debug\netcoreapp3.0\ConsoleClasswork.pdb

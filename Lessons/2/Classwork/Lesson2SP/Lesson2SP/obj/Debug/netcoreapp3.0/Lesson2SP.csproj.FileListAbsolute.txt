@@ -1,0 +1,11 @@
+G:\FolderFP\Lessons\2\Classwork\Lesson2SP\Lesson2SP\obj\Debug\netcoreapp3.0\Lesson2SP.csprojAssemblyReference.cache
+G:\FolderFP\Lessons\2\Classwork\Lesson2SP\Lesson2SP\obj\Debug\netcoreapp3.0\Lesson2SP.AssemblyInfoInputs.cache
+G:\FolderFP\Lessons\2\Classwork\Lesson2SP\Lesson2SP\obj\Debug\netcoreapp3.0\Lesson2SP.AssemblyInfo.cs
+G:\FolderFP\Lessons\2\Classwork\Lesson2SP\Lesson2SP\bin\Debug\netcoreapp3.0\Lesson2SP.exe
+G:\FolderFP\Lessons\2\Classwork\Lesson2SP\Lesson2SP\bin\Debug\netcoreapp3.0\Lesson2SP.deps.json
+G:\FolderFP\Lessons\2\Classwork\Lesson2SP\Lesson2SP\bin\Debug\netcoreapp3.0\Lesson2SP.runtimeconfig.json
+G:\FolderFP\Lessons\2\Classwork\Lesson2SP\Lesson2SP\bin\Debug\netcoreapp3.0\Lesson2SP.runtimeconfig.dev.json
+G:\FolderFP\Lessons\2\Classwork\Lesson2SP\Lesson2SP\bin\Debug\netcoreapp3.0\Lesson2SP.dll
+G:\FolderFP\Lessons\2\Classwork\Lesson2SP\Lesson2SP\bin\Debug\netcoreapp3.0\Lesson2SP.pdb
+G:\FolderFP\Lessons\2\Classwork\Lesson2SP\Lesson2SP\obj\Debug\netcoreapp3.0\Lesson2SP.dll
+G:\FolderFP\Lessons\2\Classwork\Lesson2SP\Lesson2SP\obj\Debug\netcoreapp3.0\Lesson2SP.pdb
