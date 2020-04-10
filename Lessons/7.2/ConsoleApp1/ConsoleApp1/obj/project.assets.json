@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\FolderFP\\Lessons\\7.2\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "G:\\SysFold\\Lessons\\7.2\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "G:\\FolderFP\\Lessons\\7.2\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "G:\\SysFold\\Lessons\\7.2\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\woodpc\\.nuget\\packages\\",
-      "outputPath": "G:\\FolderFP\\Lessons\\7.2\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "outputPath": "G:\\SysFold\\Lessons\\7.2\\ConsoleApp1\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\woodpc\\AppData\\Roaming\\NuGet\\NuGet.Config",
