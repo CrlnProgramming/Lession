@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,8 +10,6 @@ namespace ConsoleApp1
         {
             while (true)
             {
-
-
                 Console.WriteLine("Write the numbers: ");
                 Console.WriteLine("Enter to exit - 'stop' ");
                 var list = new List<double> { };
@@ -26,3 +24,4 @@ namespace ConsoleApp1
 
     }
 }
+*/

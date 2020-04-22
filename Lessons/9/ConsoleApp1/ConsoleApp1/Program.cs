@@ -1,62 +1,139 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
 namespace ConsoleApp1
 {
     class Program
     {
-        void Main()
+        static void Main()
         {
-            //var s = "()({[]()}[])";
-            //var checker = new BracketsChecker();
-            var demp = new Demp();
-            Console.WriteLine("");
-            /*  foreach (var ch in s)
-                  checker.Put(ch);
-                   Console.WriteLine(checker.Balanced);
+            //ValBrackets->ValidBrackets
+            var program = new ProgramWork();
+            Console.WriteLine(ValBrackets("[]()"));
+            Console.WriteLine(ValBrackets("[)[]"));
+            Console.WriteLine(ValBrackets("[)[]"));
+            Console.WriteLine(ValBrackets("[[] ()]"));
+            Console.WriteLine(ValBrackets("([([])])"));
+            Console.WriteLine();
+            Console.WriteLine(ValBrackets("("));
+             Console.WriteLine(ValBrackets("([][)"));
+            Console.WriteLine(ValBrackets("[(])"));
+             Console.WriteLine(ValBrackets("(()[]]"));
+            Console.WriteLine(ValBrackets("([{}])"));
+            Console.WriteLine(ValBrackets(")[{{])"));
+            //classWork
+            /*var a = double.Parse(Console.ReadLine());
+            Console.WriteLine(ClassworkTheWordStop(a));
             */
 
+            
         }
 
-        /* class BracketsChecker
-         {
-             private readonly string _opening = "([{";
-             private readonly string _closing = ")]}";
+        static string ValBrackets(string str)
+        {
+            string OpenBrackets = "([{";
+            string CloseBrackets = ")]}";
 
-             private bool _cantBeBalanced;
+            Dictionary<char, char> di = new Dictionary<char, char>();
+            di.Add('(', ')');
+            di.Add('[', ']');
+            di.Add('{', '}');
 
-             private Stack<int> _opened = new Stack<int>();
+            Stack<char> st = new Stack<char>();
 
-             public bool Balanced => !_cantBeBalanced && !_opened.Any();
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (OpenBrackets.Contains(str[i]))
+                    st.Push(str[i]);
+                else
+                {
+                    if(CloseBrackets.Contains(str[i]))
+                        if(st.Count == 0)
+                        {
+                            return "NO";
+                        }
+                        else
+                        {
+                            var size = st.Pop();
+                            if (di[size] == str[i])
+                            {
+                                continue;
+                            }
+                            return "NO";
+                        }
+                }
+            }
+            return st.Count > 0 ? "NO" : "YES";
+        }
 
-             public void Put(char ch)
-             {
-                 if (_cantBeBalanced) return;
+        
 
-                 int index = _opening.IndexOf(ch);
 
-                 if (index != -1)
-                 {
-                     _opened.Push(index);
-                     return;
-                 }
+        /*static double ClassworkTheWordStop(double a)
+        {
+            double summ = 0.0;
+            var list = new List<double>();
+            while (true)
+            {
+                var numbers = Console.ReadLine();
+                if (numbers == "stop")
+                {
+                    break;
+                }
+                try
+                {
+                    list.Add(double.Parse(numbers));
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Erorr!FormatExaptuon");
+                    throw;
+                }
+                if (numbers == null)
+                {
+                    Console.WriteLine("Erorr!String is null!\n" +
+                        "Lets try again!");
+                }
+            }
+            foreach (var v in list)
+                summ += v;
+            a = summ / list.Count;
+            return a;
+        }
+       */
 
-                 index = _closing.IndexOf(ch);
-
-                 if (index != -1)
-                 {
-                     if (!_opened.Any() || _opened.Peek() != index)
-                     {
-                         _cantBeBalanced = true;
-                         _opened.Clear();
-                         _opened.TrimExcess();
-                         return;
-                     }
-
-                     _opened.Pop();
-                     return;
-                 }
-             }
-         }
- */
     }
+}
+
+namespace ConsoleApp1
+{
+    class ProgramWork
+    {
+
+        public bool ValidBrackets(string input)
+        { 
+            var builder = new StringBuilder(input);
+
+            while (builder.Length>0)
+            {
+                var old = builder.Length;
+
+                builder.Replace("()", "")
+                    .Replace("[]", "");
+                
+                if(old == builder.Length)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        
+
+    }
+
+
+
 }
