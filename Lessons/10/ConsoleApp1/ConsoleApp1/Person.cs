@@ -1,34 +1,54 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace ConsoleApp1
 {
-    class Person
+    public class Person
     {
-        static string name;
-
+        private string name;
+        private int age;
+        
+        public Person()
+        {
+            Name = name;
+            Age = age;
+        }
         public string Name
         {
-            get
-            {
-                return name;
-            }
+            get { return name;}
             set
-            {
-                if (value == null)
+            { 
+                if (value != null)
                 {
-                    Console.WriteLine("Error!");
+                    name = value;
                 }
-                else
-                    value = name;
             }
         }
-        
 
-           
-        
+      
+        public int Age
+        {
+            get { return age; }
+            set
+            {
+                if (value >= 0 && value < 100)
+                {
+                    age = value;
+                }
+                else
+                    throw new ArgumentException("Argument Exception");
+            }
+        }
 
+
+
+        public int agePast => (Age + 4);
+
+        public string Desciption => $"Name: {name},Age: {age},Age past 4 years: {agePast}";
+
+        public void WriteToConsole() => Console.WriteLine(Desciption);
     }
+
+    
 
 }

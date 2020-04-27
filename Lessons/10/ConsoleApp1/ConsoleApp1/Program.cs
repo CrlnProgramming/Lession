@@ -1,28 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
+
 
 namespace ConsoleApp1
 {
 
     class Program
     {
-        var person = new Person();
+
         static void Main(string[] args)
         {
-            var person = new Person
-            {
-                Name = "Some";
-                Age = 12
-            };
-
-
+            Person[] Personal_date = new Person[4];
+            
+                for (int i = 1; i < Personal_date.Length; i++)
+                {
+                    Personal_date[i] = new Person();
+                    Console.WriteLine($"Write Name {i}: ");
+                    Personal_date[i].Name = Console.ReadLine();
+                    Console.WriteLine($"Write Age {i}: ");
+                    Personal_date[i].Age = Convert.ToInt32(Console.ReadLine());
+                    NewMethod(Personal_date, i);
+                }
+            Console.ReadKey();
+        }
+        static void NewMethod(Person[] Personal_date, int i)
+        {
+            Personal_date[i].WriteToConsole();
         }
     }
 }
 
 
 
-//Console.WriteLine("Введите возраст");
-   //         person.Old = Int32.Parse(Console.ReadLine());
-       //     person.YearsAfterFour = person.Old + 4;
-        //    Console.WriteLine($"Вам,{person.Name} через 4 года будет {person.YearsAfterFour}");
