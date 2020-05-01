@@ -1,0 +1,13 @@
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\bin\Debug\netcoreapp3.1\ConsoleApHomeWork.exe
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\bin\Debug\netcoreapp3.1\ConsoleApHomeWork.deps.json
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\bin\Debug\netcoreapp3.1\ConsoleApHomeWork.runtimeconfig.json
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\bin\Debug\netcoreapp3.1\ConsoleApHomeWork.runtimeconfig.dev.json
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\bin\Debug\netcoreapp3.1\ConsoleApHomeWork.dll
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\bin\Debug\netcoreapp3.1\ConsoleApHomeWork.pdb
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\obj\Debug\netcoreapp3.1\ConsoleApHomeWork.csprojAssemblyReference.cache
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\obj\Debug\netcoreapp3.1\ConsoleApHomeWork.csproj.CoreCompileInputs.cache
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\obj\Debug\netcoreapp3.1\ConsoleApHomeWork.AssemblyInfoInputs.cache
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\obj\Debug\netcoreapp3.1\ConsoleApHomeWork.AssemblyInfo.cs
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\obj\Debug\netcoreapp3.1\ConsoleApHomeWork.dll
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\obj\Debug\netcoreapp3.1\ConsoleApHomeWork.pdb
+G:\SysFold\Lessons\12\ConsoleApHomeWork\ConsoleApHomeWork\obj\Debug\netcoreapp3.1\ConsoleApHomeWork.genruntimeconfig.cache

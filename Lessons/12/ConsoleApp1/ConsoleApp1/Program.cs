@@ -12,7 +12,7 @@ namespace ConsoleApp1
 
             var pas = new Passport("6554332322");
 
-            pas.WriteToConsole();
+            //pas.WriteToConsole();
 
 
             
