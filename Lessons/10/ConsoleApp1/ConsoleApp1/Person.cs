@@ -5,38 +5,38 @@ namespace ConsoleApp1
 {
     public class Person
     {
-        private string name;
-        private int age;
+        private string _name;
+        private int _age;
         
         public Person()
         {
-            Name = name;
-            Age = age;
+            Name = _name;
+            Age = _age;
         }
         public string Name
         {
-            get { return name;}
+            get { return _name;}
             set
             { 
-                if (value != null)
+                if (string.IsNullOrWhiteSpace(_name))
                 {
-                    name = value;
+                    Console.WriteLine("String is empty");
                 }
+                    _name = value;
             }
         }
 
       
         public int Age
         {
-            get { return age; }
+            get { return _age; }
             set
             {
-                if (value >= 0 && value < 100)
+                if (value < 0 || value > 140)
                 {
-                    age = value;
-                }
-                else
                     throw new ArgumentException("Argument Exception");
+                }
+                    _age = value;
             }
         }
 
@@ -44,7 +44,7 @@ namespace ConsoleApp1
 
         public int agePast => (Age + 4);
 
-        public string Desciption => $"Name: {name},Age: {age},Age past 4 years: {agePast}";
+        public string Desciption => $"Name: {_name},Age: {_age},Age past 4 years: {agePast}";
 
         public void WriteToConsole() => Console.WriteLine(Desciption);
     }

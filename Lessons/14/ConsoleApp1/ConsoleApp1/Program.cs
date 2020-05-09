@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
@@ -6,20 +7,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            using (var errorList = new ErrorList("Program Error",new string[] { "xth","fdsf","sdfsf"}))
+            using (var errorList = new ErrorList("Warning", new List<string> { "asd", "sadsa", "fdsf" }))
             {
-                //errorList.Add("new error");
+                errorList.Add("New Erorr: '404'");
+
                 foreach (var i in errorList)
                 {
                     Console.WriteLine(i);
                 }
-                //errorList.Dispose;
-            } 
-           
-            
-            
-
-
+            }
         }
+
     }
 }

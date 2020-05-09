@@ -7,36 +7,36 @@ namespace ConsoleApp1
 {
     class ErrorList:IDisposable,IEnumerable<string>
     {
-        private readonly string category;
+        private readonly string Category;
+        private List<string> _errors; 
 
+        public ErrorList(string category,List<string>eror) 
+        {
+            Category = category;
+            _errors = eror;
+        }
         public string GetCategory()
         {
-            return category;
+            return Category;
         }
 
-        public List<string> Errors; 
-
-        public ErrorList(string Category,string []item) 
+        public void Add(string category)
         {
-            category = Category;
-            Errors = new List<string>(item);
+            _errors.Add(category);
         }
-
-        //public void Add(string e)
-
 
         public void Dispose()
         {
-            if (Errors != null)
+            if (_errors != null)
             {
-                Errors.Clear();
-                Errors = null;
+                _errors.Clear();
+                _errors = null;
             }
         }
 
         public IEnumerator<string> GetEnumerator()
         {
-            var ge = Errors.GetEnumerator();
+            var ge = _errors.GetEnumerator();
             return ge;
         }
 

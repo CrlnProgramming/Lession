@@ -9,23 +9,32 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            Person[] Personal_date = new Person[4];
-            
+                Person[] Personal_date = new Person[4];
+
                 for (int i = 1; i < Personal_date.Length; i++)
                 {
                     Personal_date[i] = new Person();
                     Console.WriteLine($"Write Name {i}: ");
                     Personal_date[i].Name = Console.ReadLine();
-                    Console.WriteLine($"Write Age {i}: ");
-                    Personal_date[i].Age = Convert.ToInt32(Console.ReadLine());
-                    NewMethod(Personal_date, i);
+                    
                 }
-            Console.ReadKey();
+
+                for (int j = 1; j < Personal_date.Length; j++)
+                {
+                    Personal_date[j] = new Person();
+                    Console.WriteLine($"Write Age {j}: ");
+                    Personal_date[j].Age = Convert.ToInt32(Console.ReadLine());
+                }
+
+                for (int i = 1; i < Personal_date.Length; i++)
+                {
+                    Personal_date[i].WriteToConsole();
+                }
+                Console.ReadKey();
+            
+            
         }
-        static void NewMethod(Person[] Personal_date, int i)
-        {
-            Personal_date[i].WriteToConsole();
-        }
+        
     }
 }
 

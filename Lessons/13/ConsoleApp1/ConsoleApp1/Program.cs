@@ -1,17 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
+
 namespace ConsoleApp1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var heli = new Halicopter(3000,5000);
-            heli.WriteToInfo();
+            var thisDate = DateTimeOffset.Now;
+            
+            Console.WriteLine("Write ur massage: ");
+            var mas = Console.ReadLine();
+            var consoleLogWriter = new ConsoleLogWriter(thisDate,mas);
+            var fileLogWriter = new FileLogWriter(thisDate, mas);
+            var multipleLogWriter = new MultipleLogWriter(thisDate, mas);
 
-            var plane = new Plane(4000, 5000);
-            plane.WriteToInfo();
+            consoleLogWriter.LogError(mas, thisDate);
+            consoleLogWriter.LogWarning(mas, thisDate);
+            consoleLogWriter.LogInfo(mas, thisDate);
+
+            fileLogWriter.LogError(mas, thisDate);
+            fileLogWriter.LogWarning(mas, thisDate);
+            fileLogWriter.LogInfo(mas, thisDate);
+
+            multipleLogWriter.LogError(mas, thisDate);
+            multipleLogWriter.LogWarning(mas, thisDate);
+            multipleLogWriter.LogInfo(mas, thisDate);
+
+
 
         }
     }

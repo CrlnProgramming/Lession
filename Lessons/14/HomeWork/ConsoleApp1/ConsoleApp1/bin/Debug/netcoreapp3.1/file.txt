@@ -1,0 +1,1 @@
+01.01.0001 0:00:00 +00:00 	 LogError 	 Error Massage01.01.0001 0:00:00 +00:00 	 LogInfo 	 Info Massage01.01.0001 0:00:00 +00:00 	 LogWarning 	 Warning Massage
