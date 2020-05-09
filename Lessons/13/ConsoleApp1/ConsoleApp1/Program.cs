@@ -7,28 +7,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var thisDate = DateTimeOffset.Now;
-            
-            Console.WriteLine("Write ur massage: ");
-            var mas = Console.ReadLine();
-            var consoleLogWriter = new ConsoleLogWriter(thisDate,mas);
-            var fileLogWriter = new FileLogWriter(thisDate, mas);
-            var multipleLogWriter = new MultipleLogWriter(thisDate, mas);
+            var consoleLogWriter = new ConsoleLogWriter();
+            var fileLogWriter = new FileLogWriter();
+            var multipleLogWriter = new MultipleLogWriter();
 
-            consoleLogWriter.LogError(mas, thisDate);
-            consoleLogWriter.LogWarning(mas, thisDate);
-            consoleLogWriter.LogInfo(mas, thisDate);
+            consoleLogWriter.LogError("massage");
+            consoleLogWriter.LogWarning("massage");
+            consoleLogWriter.LogInfo("massage");
 
-            fileLogWriter.LogError(mas, thisDate);
-            fileLogWriter.LogWarning(mas, thisDate);
-            fileLogWriter.LogInfo(mas, thisDate);
+            fileLogWriter.LogError("massage");
+            fileLogWriter.LogWarning("massage");
+            fileLogWriter.LogInfo("massage");
 
-            multipleLogWriter.LogError(mas, thisDate);
-            multipleLogWriter.LogWarning(mas, thisDate);
-            multipleLogWriter.LogInfo(mas, thisDate);
-
-
-
+            multipleLogWriter.LogError("massage");
+            multipleLogWriter.LogWarning("massage");
+            multipleLogWriter.LogInfo("massage");
         }
     }
 }

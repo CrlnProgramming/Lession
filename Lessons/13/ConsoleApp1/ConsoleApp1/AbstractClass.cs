@@ -5,27 +5,23 @@ namespace ConsoleApp1
 {
     interface ILogerWriter
     {
-        public DateTimeOffset Date { get; set; }
-        public string Massage { get; set; }
-        void LogInfo(string massage, DateTimeOffset date);
-        void LogWarning(string massage, DateTimeOffset date);
-        void LogError(string massage, DateTimeOffset date);
+        void LogInfo(string massage);
+        void LogWarning(string massage);
+        void LogError(string massage);
         
     }
 
     abstract class AbstractClass : ILogerWriter
     {
-        public DateTimeOffset Date { get; set; } = DateTimeOffset.UtcNow;
-        public string Massage { get; set; }
-        public AbstractClass(DateTimeOffset date)
+        public DateTimeOffset Date { get; set; } 
+        public AbstractClass()
         {
-            Date = date;
+            Date = DateTimeOffset.UtcNow;
         }
 
-
-        public abstract void LogInfo(string massage, DateTimeOffset date);
-        public abstract void LogWarning(string massage, DateTimeOffset date);
-        public abstract void LogError(string massage, DateTimeOffset date);
+        public abstract void LogInfo(string massage);
+        public abstract void LogWarning(string massage);
+        public abstract void LogError(string massage);
 
 
     }

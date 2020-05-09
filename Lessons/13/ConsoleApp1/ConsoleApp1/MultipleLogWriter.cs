@@ -5,24 +5,27 @@ namespace ConsoleApp1
 {
     class MultipleLogWriter : AbstractClass
     {
-        public MultipleLogWriter(DateTimeOffset date, string massage) : base(date) { Massage = massage; }
+        public MultipleLogWriter() : base() 
+        { 
 
-        public override void LogInfo(string massage, DateTimeOffset date)
-        {
-            File.AppendAllText("file.txt", $"{date} \t LogInfo \t {massage}");
-            Console.WriteLine($"{date} \t LogInfo \t {massage}");
         }
 
-        public override void LogWarning(string massage, DateTimeOffset date)
+        public override void LogInfo(string massage)
         {
-            File.AppendAllText("file.txt", $"{date} \t LogWarning \t {massage}");
-            Console.WriteLine($"{date} \t LogWarning \t {massage}");
+            File.AppendAllText("file.txt", $"{Date} \t LogInfo \t {massage}");
+            Console.WriteLine($"{Date} \t LogInfo \t {massage}");
         }
 
-        public override void LogError(string massage, DateTimeOffset date)
+        public override void LogWarning(string massage)
         {
-            File.AppendAllText("file.txt", $"{date} \t LogError \t {massage}");
-            Console.WriteLine($"{date} \t LogError \t {massage}");
+            File.AppendAllText("file.txt", $"{Date} \t LogWarning \t {massage}");
+            Console.WriteLine($"{Date} \t LogWarning \t {massage}");
+        }
+
+        public override void LogError(string massage)
+        {
+            File.AppendAllText("file.txt", $"{Date} \t LogError \t {massage}");
+            Console.WriteLine($"{Date} \t LogError \t {massage}");
         }
     }
 }
