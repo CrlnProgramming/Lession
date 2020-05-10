@@ -5,9 +5,10 @@ namespace ConsoleApp1
 {
     class FileLogWriter : AbstractClass
     {
-        public FileLogWriter() : base() 
-        { 
-
+        public DateTimeOffset Date;
+        public FileLogWriter() 
+        {
+            Date = DateTimeOffset.UtcNow;
         }
 
         public override void LogInfo(string massage)

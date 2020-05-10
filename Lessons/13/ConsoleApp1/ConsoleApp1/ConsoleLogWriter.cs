@@ -5,9 +5,10 @@ namespace ConsoleApp1
 {
     class ConsoleLogWriter : AbstractClass
     {
-        public ConsoleLogWriter():base()
+        public DateTimeOffset Date;
+        public ConsoleLogWriter()
         {
-
+            Date = DateTimeOffset.UtcNow;
         }
 
         public override void LogInfo(string massage)

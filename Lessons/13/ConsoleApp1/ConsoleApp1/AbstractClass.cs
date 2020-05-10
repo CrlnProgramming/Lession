@@ -13,10 +13,8 @@ namespace ConsoleApp1
 
     abstract class AbstractClass : ILogerWriter
     {
-        public DateTimeOffset Date { get; set; } 
         public AbstractClass()
         {
-            Date = DateTimeOffset.UtcNow;
         }
 
         public abstract void LogInfo(string massage);
