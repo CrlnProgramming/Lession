@@ -2,17 +2,24 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace ConsoleApp1
 {
-    class MultipleLogWriter : ILogerWriter
+    class MultipleLogWriter : AbstractClass
     {
-        readonly Collection[] collections = new Collection[3];
-      
-        public MultipleLogWriter() 
+        private string _nameFile = "file.txt";
+
+        public MultipleLogWriter(ILogerWriter[]collectrion) :base()
         {
         }
-        
+
+        public override void WriteErrorType(string ErrorType)
+        {
+            Console.WriteLine(ErrorType);
+            File.AppendAllText(_nameFile, ErrorType);
+        }
 
     }
 }

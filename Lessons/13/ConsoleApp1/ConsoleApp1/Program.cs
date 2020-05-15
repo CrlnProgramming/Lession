@@ -9,9 +9,17 @@ namespace ConsoleApp1
         {
             var consoleLogWriter = new ConsoleLogWriter();
             var fileLogWriter = new FileLogWriter();
-            var multipleLogWriter = new MultipleLogWriter();
+            var multipleLogWriter = new MultipleLogWriter(new ILogerWriter[] { consoleLogWriter,fileLogWriter});
 
+            consoleLogWriter.LogInfo("LogInfo");
+            consoleLogWriter.LogWarning("LogWarning");
+            consoleLogWriter.LogError("LogError");
             
+            fileLogWriter.LogInfo("LogInfo");
+            fileLogWriter.LogWarning("LogWarning");
+            fileLogWriter.LogError("LogError");
+
+
         }
     }
 }
