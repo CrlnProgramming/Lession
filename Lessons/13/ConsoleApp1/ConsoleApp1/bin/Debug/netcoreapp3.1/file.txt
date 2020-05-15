@@ -1,1 +1,3 @@
-05.05.2020 0:23:50 +03:00 	 LogError 	 qu qu05.05.2020 0:23:50 +03:00 	 LogWarning 	 qu qu05.05.2020 0:23:50 +03:00 	 LogInfo 	 qu qu05.05.2020 0:23:50 +03:00 	 LogError 	 qu qu05.05.2020 0:23:50 +03:00 	 LogWarning 	 qu qu05.05.2020 0:23:50 +03:00 	 LogInfo 	 qu qu
+05.05.2020 0:23:50 +03:00 	 LogError 	 qu qu05.05.2020 0:23:50 +03:00 	 LogWarning 	 qu qu05.05.2020 0:23:50 +03:00 	 LogInfo 	 qu qu05.05.2020 0:23:50 +03:00 	 LogError 	 qu qu05.05.2020 0:23:50 +03:00 	 LogWarning 	 qu qu05.05.2020 0:23:50 +03:00 	 LogInfo 	 qu qu2020:05:13T05:11:01 	 LogError 	 massage2020:05:13T05:11:01 	 LogWarning 	 massage2020:05:13T05:11:01 	 LogInfo 	 massage2020:05:13T05:11:01 	 LogError 	 massage
+2020:05:13T05:11:01 	 LogWarning 	 massage
+2020:05:13T05:11:01 	 LogInfo 	 massage

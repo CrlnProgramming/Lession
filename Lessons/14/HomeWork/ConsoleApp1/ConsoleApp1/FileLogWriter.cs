@@ -3,36 +3,33 @@ using System.IO;
 
 namespace ConsoleApp1
 {
-    class FileLogWriter : ILogerWriter
+    class FileLogWriter : AbstractClass
     {
-        public string Massage { get; set; }
-        public DateTimeOffset Date { get; set; }
-        private static readonly Lazy<FileLogWriter> _intence1 = new Lazy<FileLogWriter>(() => new FileLogWriter());
+        private static readonly Lazy<FileLogWriter> _intance = new Lazy<FileLogWriter>(() => new FileLogWriter());
+
+        public DateTimeOffset Date;
         private FileLogWriter()
         {
-
-        }
-        
-        public void LogInfo(string massage)
-        {
-            Massage = massage;
-            File.AppendAllText("file.txt", $"{Date} \t LogInfo \t {massage}");
+            Date = DateTimeOffset.UtcNow;
         }
 
-        public void LogWarning(string massage)
+        public override void LogInfo(string massage)
         {
-            Massage = massage;
-            File.AppendAllText("file.txt", $"{Date} \t LogWarning \t {massage}");
+            File.AppendAllText("file.txt", $"{Date:yyyy:MM:ddThh:mm:ss} \t LogInfo \t {massage}");
         }
 
-        public void LogError(string massage)
+        public override void LogWarning(string massage)
         {
-            Massage = massage;
-            File.AppendAllText("file.txt", $"{Date} \t LogError \t {massage}");
+            File.AppendAllText("file.txt", $"{Date:yyyy:MM:ddThh:mm:ss} \t LogWarning \t {massage}");
         }
-        public static FileLogWriter Intence1
+
+        public override void LogError(string massage)
         {
-            get { return _intence1.Value; }
+            File.AppendAllText("file.txt", $"{Date:yyyy:MM:ddThh:mm:ss} \t LogError \t {massage}");
+        }
+        public static FileLogWriter Intance
+        {
+            get { return _intance.Value; }
         }
     }
 }

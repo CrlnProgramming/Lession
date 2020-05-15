@@ -1,32 +1,18 @@
 ﻿using System;
-
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
     class ConsoleLogWriter : AbstractClass
     {
-        public DateTimeOffset Date;
         public ConsoleLogWriter()
         {
-            Date = DateTimeOffset.UtcNow;
         }
 
-        public override void LogInfo(string massage)
+        public override void WriteErrorType(string ErrorType)
         {
-            var MessageType = $"{Date:yyyy:MM:ddThh:mm:ss} \t LogInfo \t {massage}\n";
-            Console.WriteLine(MessageType);
+            Console.WriteLine(ErrorType);
         }
 
-        public override void LogWarning(string massage)
-        {
-            var MessageType = $"{Date:yyyy:MM:ddThh:mm:ss} \t LogWarning \t {massage}\n";
-            Console.WriteLine(MessageType);
-        }
-
-        public override void LogError(string massage)
-        {
-            var MessageType = $"{Date:yyyy:MM:ddThh:mm:ss} \t LogError \t {massage}\n";
-            Console.WriteLine(MessageType);
-        }
     }
 }

@@ -1,35 +1,18 @@
-﻿using System;
-using System.IO;
+﻿using Microsoft.VisualBasic;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
-    class MultipleLogWriter : AbstractClass
+    class MultipleLogWriter : ILogerWriter
     {
-        public DateTimeOffset Date;
+        readonly Collection[] collections = new Collection[3];
+      
         public MultipleLogWriter() 
         {
-            Date = DateTimeOffset.UtcNow;
         }
+        
 
-        public override void LogInfo(string massage)
-        {
-            File.AppendAllText("file.txt", $"{Date} \t LogInfo \t {massage}");
-            var MessageType = $"{Date:yyyy:MM:ddThh:mm:ss} \t LogInfo \t {massage}\n";
-            Console.WriteLine(MessageType);
-        }
-
-        public override void LogWarning(string massage)
-        {
-            File.AppendAllText("file.txt", $"{Date} \t LogWarning \t {massage}");
-            var MessageType = $"{Date:yyyy:MM:ddThh:mm:ss} \t LogWarning \t {massage}\n";
-            Console.WriteLine(MessageType);
-        }
-
-        public override void LogError(string massage)
-        {
-            File.AppendAllText("file.txt", $"{Date} \t LogError \t {massage}");
-            var MessageType = $"{Date:yyyy:MM:ddThh:mm:ss} \t LogError \t {massage}\n";
-            Console.WriteLine(MessageType);
-        }
     }
 }

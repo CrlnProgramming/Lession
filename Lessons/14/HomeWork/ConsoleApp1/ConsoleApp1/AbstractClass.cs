@@ -11,5 +11,16 @@ namespace ConsoleApp1
         void LogError(string massage);
     }
 
-    
+    abstract class AbstractClass : ILogerWriter
+    {
+        public AbstractClass()
+        {
+        }
+
+        public abstract void LogInfo(string massage);
+        public abstract void LogWarning(string massage);
+        public abstract void LogError(string massage);
+
+
+    }
 }

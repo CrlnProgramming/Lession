@@ -11,17 +11,7 @@ namespace ConsoleApp1
             var fileLogWriter = new FileLogWriter();
             var multipleLogWriter = new MultipleLogWriter();
 
-            consoleLogWriter.LogError("massage");
-            consoleLogWriter.LogWarning("massage");
-            consoleLogWriter.LogInfo("massage");
-
-            fileLogWriter.LogError("massage");
-            fileLogWriter.LogWarning("massage");
-            fileLogWriter.LogInfo("massage");
-
-            multipleLogWriter.LogError("massage");
-            multipleLogWriter.LogWarning("massage");
-            multipleLogWriter.LogInfo("massage");
+            
         }
     }
 }

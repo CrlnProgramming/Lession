@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+
 
 namespace ConsoleApp1
 {
@@ -9,13 +7,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            ConsoleLogWriter._intence.Value.LogError("Error Massage");
-            ConsoleLogWriter._intence.Value.LogInfo("Info Massage");
-            ConsoleLogWriter._intence.Value.LogWarning("Warning Massage");
+            ConsoleLogWriter.Intance.LogError("Error Massage");
+            ConsoleLogWriter.Intance.LogInfo("Info Massage");
+            ConsoleLogWriter.Intance.LogWarning("Warning Massage");
 
-            FileLogWriter.Intence1.LogError("Error Massage");
-            FileLogWriter.Intence1.LogInfo("Info Massage");
-            FileLogWriter.Intence1.LogWarning("Warning Massage");
+            FileLogWriter.Intance.LogError("Error Massage");
+            FileLogWriter.Intance.LogInfo("Info Massage");
+            FileLogWriter.Intance.LogWarning("Warning Massage");
+
+            MultipleLogWriter.Intance.LogError("Error Massage");
+            MultipleLogWriter.Intance.LogInfo("Info Massage");
+            MultipleLogWriter.Intance.LogWarning("Warning Massage");
 
         }
     }

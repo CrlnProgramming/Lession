@@ -1,5 +1,6 @@
 ﻿using System;
-
+using System.Linq;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
@@ -8,19 +9,35 @@ namespace ConsoleApp1
         void LogInfo(string massage);
         void LogWarning(string massage);
         void LogError(string massage);
-        
+
     }
 
     abstract class AbstractClass : ILogerWriter
     {
-        public AbstractClass()
+        private string ErrorType;
+        public AbstractClass() { }
+
+        public abstract void WriteErrorType(string ErrorType);
+        public virtual void LogInfo(string massage)
         {
+            ErrorType = $"{DateTimeOffset.Now:yyyy:MM:ddThh:mm:ss} \t LogInfo \t {massage}\n";
+            WriteErrorType(ErrorType);
         }
 
-        public abstract void LogInfo(string massage);
-        public abstract void LogWarning(string massage);
-        public abstract void LogError(string massage);
+        public virtual void LogWarning(string massage)
+        {
+            ErrorType = $"{DateTimeOffset.Now:yyyy:MM:ddThh:mm:ss} \t LogWarning \t {massage}\n";
+            WriteErrorType(ErrorType);
+        }
+        public virtual void LogError(string massage)
+        {
+            ErrorType = $"{DateTimeOffset.Now:yyyy:MM:ddThh:mm:ss} \t LogError \t {massage}\n";
+            WriteErrorType(ErrorType);
+        }
 
+       
+        
+    } 
 
-    }
+    
 }

@@ -5,25 +5,16 @@ namespace ConsoleApp1
 {
     class FileLogWriter : AbstractClass
     {
-        public DateTimeOffset Date;
+        private string _nameFile = "file.txt";
         public FileLogWriter() 
         {
-            Date = DateTimeOffset.UtcNow;
         }
-
-        public override void LogInfo(string massage)
+        public override void WriteErrorType(string ErrorType)
         {
-            File.AppendAllText("file.txt", $"{Date:yyyy:MM:ddThh:mm:ss} \t LogInfo \t {massage}");
+            File.AppendAllText(_nameFile, ErrorType);
         }
+        
 
-        public override void LogWarning(string massage)
-        {
-            File.AppendAllText("file.txt", $"{Date:yyyy:MM:ddThh:mm:ss} \t LogWarning \t {massage}");
-        }
-
-        public override void LogError(string massage)
-        {
-            File.AppendAllText("file.txt", $"{Date:yyyy:MM:ddThh:mm:ss} \t LogError \t {massage}");
-        }
+        
     }
 }
