@@ -7,21 +7,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //var Acc = new Account<int, string>(id: 1, name: "Georgiy");
-            //Acc.WriteProporties();
-            
+            var Acc = new Acaount<int>(1,"Georgiy");
+            Acc.WriteProporties();
+            Calculator();
+        }
+
+        private static void Calculator()
+        {
             var circle = new Circle(1.5);
             circle.Calculate(radius => Math.PI * 2 * radius);
 
-            foreach(var item in new int[] { 1, 2, 3, 4, 5 }.Where(i => i % 2 == 0))
-                {
+            foreach (var item in new int[] { 1, 2, 3, 4, 5 }.Where(i => i % 2 == 0))
+            {
                 Console.WriteLine(item);
             }
-
-
         }
-
-
     }
 
 
@@ -33,29 +33,9 @@ namespace ConsoleApp1
         {
             _radius = radius;
         }
-
-        
-
         public double Calculate(Func<double,double> operaticon)
         {
             return operaticon(_radius);
         }
     }
-
-
-   /* class Account<T ,B>
-    {
-        public int Id  { get; private set; }
-        public string Name { get; private set; }
-
-        public Account(int id,string name)
-        {
-            Id = id;
-            Name = name;
-        }
-
-        public void WriteProporties() => Console.WriteLine($"id: {Id}, name: {Name}");
-        }
-*/
-    
 }

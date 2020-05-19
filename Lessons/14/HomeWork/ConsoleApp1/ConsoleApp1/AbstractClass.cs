@@ -13,13 +13,29 @@ namespace ConsoleApp1
 
     abstract class AbstractClass : ILogerWriter
     {
+        private string ErrorType;
         public AbstractClass()
         {
         }
 
-        public abstract void LogInfo(string massage);
-        public abstract void LogWarning(string massage);
-        public abstract void LogError(string massage);
+        public abstract void WriteErrorType(string ErrorType);
+
+        public virtual void LogInfo(string massage)
+        {
+            ErrorType = $"{DateTimeOffset.Now:yyyy:MM:ddThh:mm:ss} \t LogInfo \t {massage}\n";
+            WriteErrorType(ErrorType);
+        }
+
+        public virtual void LogWarning(string massage)
+        {
+            ErrorType = $"{DateTimeOffset.Now:yyyy:MM:ddThh:mm:ss} \t LogWarning \t {massage}\n";
+            WriteErrorType(ErrorType);
+        }
+        public virtual void LogError(string massage)
+        {
+            ErrorType = $"{DateTimeOffset.Now:yyyy:MM:ddThh:mm:ss} \t LogError \t {massage}\n";
+            WriteErrorType(ErrorType);
+        }
 
 
     }
