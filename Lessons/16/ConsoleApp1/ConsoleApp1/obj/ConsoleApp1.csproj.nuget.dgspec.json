@@ -4,14 +4,76 @@
     "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ClassLibrary1\\ClassLibrary1.csproj",
-        "projectName": "ClassLibrary1",
-        "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectName": "ConsoleApp1",
+        "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\woodpc\\.nuget\\packages\\",
-        "outputPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ClassLibrary1\\obj\\",
+        "outputPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ConsoleApp1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\woodpc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCalculateStandart\\LibraryCalculateStandart.csproj": {
+                "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCalculateStandart\\LibraryCalculateStandart.csproj"
+              },
+              "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCore\\LibraryCore.csproj": {
+                "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCore\\LibraryCore.csproj"
+              },
+              "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\Library\\Library.csproj": {
+                "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\Library\\Library.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCalculateStandart\\LibraryCalculateStandart.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCalculateStandart\\LibraryCalculateStandart.csproj",
+        "projectName": "LibraryCalculateStandart",
+        "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCalculateStandart\\LibraryCalculateStandart.csproj",
+        "packagesPath": "C:\\Users\\woodpc\\.nuget\\packages\\",
+        "outputPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCalculateStandart\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\woodpc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +121,14 @@
         }
       }
     },
-    "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCore\\LibraryCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-        "projectName": "ConsoleApp1",
-        "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCore\\LibraryCore.csproj",
+        "projectName": "LibraryCore",
+        "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCore\\LibraryCore.csproj",
         "packagesPath": "C:\\Users\\woodpc\\.nuget\\packages\\",
-        "outputPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ConsoleApp1\\obj\\",
+        "outputPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\woodpc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -81,11 +143,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {
-              "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ClassLibrary1\\ClassLibrary1.csproj": {
-                "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ClassLibrary1\\ClassLibrary1.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -111,6 +169,61 @@
               "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\Library\\Library.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\Library\\Library.csproj",
+        "projectName": "Library",
+        "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\Library\\Library.csproj",
+        "packagesPath": "C:\\Users\\woodpc\\.nuget\\packages\\",
+        "outputPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\Library\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\woodpc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }

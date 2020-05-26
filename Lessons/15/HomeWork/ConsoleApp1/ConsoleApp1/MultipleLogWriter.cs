@@ -1,11 +1,10 @@
 ﻿using System;
-using System.IO;
 
 namespace ConsoleApp1
 {
     class MultipleLogWriter:ILogerWriter
     {
-        private string _nameFile = "file.txt";
+        
         private ILogerWriter[] _ilogerWriters;
         public MultipleLogWriter(ILogerWriter[] logersArg)
         {

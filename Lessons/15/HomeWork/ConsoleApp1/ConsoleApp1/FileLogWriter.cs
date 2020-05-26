@@ -7,6 +7,7 @@ namespace ConsoleApp1
         private string _nameFile = "file.txt";
         public FileLogWriter()
         {
+         
         }
         public override void WriteErrorType(string ErrorType)
         {

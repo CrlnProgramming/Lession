@@ -6,22 +6,28 @@ namespace ConsoleApp1
 {
     class LogWriterFactory
     {
-        public FileLogWriter fileLog = new FileLogWriter();
-        public MultipleLogWriter multipleLogWriter = new MultipleLogWriter(logersArg);
-        public ConsoleLogWriter consoleLog = new ConsoleLogWriter();
-
-        private static readonly LogWriterFactory _factory = new LogWriterFactory();
+        private static LogWriterFactory _instance;
+        public static LogWriterFactory Instance => _instance ??= new LogWriterFactory();
+        private LogWriterFactory() { }
 
         public ILogerWriter GetLogerWriter<T>(object parametrs) where T : ILogerWriter
         {
-            return multipleLogWriter(parametrs as ILogerWriter[]);
-        }
-
-        private LogWriterFactory(){}
-
-        public static LogWriterFactory GetFactory()
-        {
-            return _factory;
+            if (typeof(T) == typeof(ConsoleLogWriter))
+            {
+                return new ConsoleLogWriter();
+            }
+            if (typeof(T)==typeof(FileLogWriter))
+            {
+                return new FileLogWriter();
+            }
+            if (typeof(T) == typeof(MultipleLogWriter))
+            {
+                return new MultipleLogWriter(parametrs as ILogerWriter[]);
+            }
+            else
+            {
+                throw new Exception("Out of range");
+            }
         }
     }
 }

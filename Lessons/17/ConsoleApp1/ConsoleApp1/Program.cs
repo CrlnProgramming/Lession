@@ -1,23 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Program
-    {
+
+   static class Program
+   {
         static void Main(string[] args)
         {
-            ClassGen classGen = new ClassGen();
-            classGen.GetArray += 
-            
+           
         }
-        public static void FileWrite(object sender, DataGanerateEventArgs dataGanerateEventArgs)
-        {
-            foreach (var item in dataGanerateEventArgs)
-            {
-                File.WriteAllText()
-            }
-        }
-        
-    }
+
+       
+   }
 }

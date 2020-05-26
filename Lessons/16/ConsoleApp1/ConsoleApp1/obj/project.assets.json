@@ -2,28 +2,60 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "ClassLibrary1/1.0.0": {
+      "Library/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/ClassLibrary1.dll": {}
+          "bin/placeholder/Library.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ClassLibrary1.dll": {}
+          "bin/placeholder/Library.dll": {}
+        }
+      },
+      "LibraryCalculateStandart/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/LibraryCalculateStandart.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryCalculateStandart.dll": {}
+        }
+      },
+      "LibraryCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/LibraryCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryCore.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "ClassLibrary1/1.0.0": {
+    "Library/1.0.0": {
       "type": "project",
-      "path": "../ClassLibrary1/ClassLibrary1.csproj",
-      "msbuildProject": "../ClassLibrary1/ClassLibrary1.csproj"
+      "path": "../Library/Library.csproj",
+      "msbuildProject": "../Library/Library.csproj"
+    },
+    "LibraryCalculateStandart/1.0.0": {
+      "type": "project",
+      "path": "../LibraryCalculateStandart/LibraryCalculateStandart.csproj",
+      "msbuildProject": "../LibraryCalculateStandart/LibraryCalculateStandart.csproj"
+    },
+    "LibraryCore/1.0.0": {
+      "type": "project",
+      "path": "../LibraryCore/LibraryCore.csproj",
+      "msbuildProject": "../LibraryCore/LibraryCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "ClassLibrary1 >= 1.0.0"
+      "Library >= 1.0.0",
+      "LibraryCalculateStandart >= 1.0.0",
+      "LibraryCore >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -52,8 +84,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ClassLibrary1\\ClassLibrary1.csproj": {
-              "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\ClassLibrary1\\ClassLibrary1.csproj"
+            "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCalculateStandart\\LibraryCalculateStandart.csproj": {
+              "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCalculateStandart\\LibraryCalculateStandart.csproj"
+            },
+            "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCore\\LibraryCore.csproj": {
+              "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\LibraryCore\\LibraryCore.csproj"
+            },
+            "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\Library\\Library.csproj": {
+              "projectPath": "G:\\SysFold\\Lessons\\16\\ConsoleApp1\\Library\\Library.csproj"
             }
           }
         }

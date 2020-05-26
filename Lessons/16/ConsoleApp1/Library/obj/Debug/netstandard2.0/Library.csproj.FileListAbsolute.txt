@@ -1,0 +1,9 @@
+G:\SysFold\Lessons\16\ConsoleApp1\Library\bin\Debug\netstandard2.0\Library.deps.json
+G:\SysFold\Lessons\16\ConsoleApp1\Library\bin\Debug\netstandard2.0\Library.dll
+G:\SysFold\Lessons\16\ConsoleApp1\Library\bin\Debug\netstandard2.0\Library.pdb
+G:\SysFold\Lessons\16\ConsoleApp1\Library\obj\Debug\netstandard2.0\Library.csprojAssemblyReference.cache
+G:\SysFold\Lessons\16\ConsoleApp1\Library\obj\Debug\netstandard2.0\Library.csproj.CoreCompileInputs.cache
+G:\SysFold\Lessons\16\ConsoleApp1\Library\obj\Debug\netstandard2.0\Library.AssemblyInfoInputs.cache
+G:\SysFold\Lessons\16\ConsoleApp1\Library\obj\Debug\netstandard2.0\Library.AssemblyInfo.cs
+G:\SysFold\Lessons\16\ConsoleApp1\Library\obj\Debug\netstandard2.0\Library.dll
+G:\SysFold\Lessons\16\ConsoleApp1\Library\obj\Debug\netstandard2.0\Library.pdb

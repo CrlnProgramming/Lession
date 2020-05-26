@@ -4,13 +4,13 @@ G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp
 G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.dev.json
 G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.dll
 G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.pdb
-G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ClassLibrary1.dll
-G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ClassLibrary1.pdb
 G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csprojAssemblyReference.cache
 G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CoreCompileInputs.cache
 G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfoInputs.cache
 G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfo.cs
-G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CopyComplete
 G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
 G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
 G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache
+G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\Library.dll
+G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\Library.pdb
+G:\SysFold\Lessons\16\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CopyComplete
