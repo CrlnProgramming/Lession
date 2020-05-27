@@ -26,7 +26,7 @@ namespace ConsoleApp1
             }
             else
             {
-                throw new Exception("Out of range");
+                throw new InvalidOperationException("Out of range");
             }
         }
     }

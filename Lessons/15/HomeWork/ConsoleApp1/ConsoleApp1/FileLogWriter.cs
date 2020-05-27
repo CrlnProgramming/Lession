@@ -4,10 +4,10 @@ namespace ConsoleApp1
 {
     class FileLogWriter:AbstractClass
     {
-        private string _nameFile = "file.txt";
+        private string _nameFile;
         public FileLogWriter()
         {
-         
+            _nameFile = "file.txt";
         }
         public override void WriteErrorType(string ErrorType)
         {
