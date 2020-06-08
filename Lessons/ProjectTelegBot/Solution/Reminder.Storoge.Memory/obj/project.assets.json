@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "Reminder.Storage/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Reminder.Storage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reminder.Storage.dll": {}
+        }
+      },
+      "Reminder.Storage.Memory.Tests/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Reminder.Storage.Memory.Tests.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reminder.Storage.Memory.Tests.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Reminder.Storage/1.0.0": {
+      "type": "project",
+      "path": "../Reminder.Storage/Reminder.Storage.csproj",
+      "msbuildProject": "../Reminder.Storage/Reminder.Storage.csproj"
+    },
+    "Reminder.Storage.Memory.Tests/1.0.0": {
+      "type": "project",
+      "path": "../Reminder.Storage.Memory.Tests/Reminder.Storage.Memory.Tests.csproj",
+      "msbuildProject": "../Reminder.Storage.Memory.Tests/Reminder.Storage.Memory.Tests.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "Reminder.Storage >= 1.0.0",
+      "Reminder.Storage.Memory.Tests >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\woodpc\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "G:\\SysFold\\Lessons\\ProjectTelegBot\\Solution\\Reminder.Storoge.Memory\\Reminder.Storoge.Memory.csproj",
+      "projectName": "Reminder.Storoge.Memory",
+      "projectPath": "G:\\SysFold\\Lessons\\ProjectTelegBot\\Solution\\Reminder.Storoge.Memory\\Reminder.Storoge.Memory.csproj",
+      "packagesPath": "C:\\Users\\woodpc\\.nuget\\packages\\",
+      "outputPath": "G:\\SysFold\\Lessons\\ProjectTelegBot\\Solution\\Reminder.Storoge.Memory\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\woodpc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "projectReferences": {
+            "G:\\SysFold\\Lessons\\ProjectTelegBot\\Solution\\Reminder.Storage.Memory.Tests\\Reminder.Storage.Memory.Tests.csproj": {
+              "projectPath": "G:\\SysFold\\Lessons\\ProjectTelegBot\\Solution\\Reminder.Storage.Memory.Tests\\Reminder.Storage.Memory.Tests.csproj"
+            },
+            "G:\\SysFold\\Lessons\\ProjectTelegBot\\Solution\\Reminder.Storage\\Reminder.Storage.csproj": {
+              "projectPath": "G:\\SysFold\\Lessons\\ProjectTelegBot\\Solution\\Reminder.Storage\\Reminder.Storage.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект Reminder.Storage.Memory.Tests несовместим с netstandard2.1 (.NETStandard,Version=v2.1). Проект Reminder.Storage.Memory.Tests поддерживает: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "Reminder.Storage.Memory.Tests",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.1"
+      ]
+    }
+  ]
+}

@@ -1,8 +1,0 @@
-G:\SysFold\Lessons\Project\ProjectTelegramBot\Reminder.Storege\bin\Debug\netstandard2.0\Reminder.Storage.deps.json
-G:\SysFold\Lessons\Project\ProjectTelegramBot\Reminder.Storege\bin\Debug\netstandard2.0\Reminder.Storage.dll
-G:\SysFold\Lessons\Project\ProjectTelegramBot\Reminder.Storege\bin\Debug\netstandard2.0\Reminder.Storage.pdb
-G:\SysFold\Lessons\Project\ProjectTelegramBot\Reminder.Storege\obj\Debug\netstandard2.0\Reminder.Storage.csprojAssemblyReference.cache
-G:\SysFold\Lessons\Project\ProjectTelegramBot\Reminder.Storege\obj\Debug\netstandard2.0\Reminder.Storage.AssemblyInfoInputs.cache
-G:\SysFold\Lessons\Project\ProjectTelegramBot\Reminder.Storege\obj\Debug\netstandard2.0\Reminder.Storage.AssemblyInfo.cs
-G:\SysFold\Lessons\Project\ProjectTelegramBot\Reminder.Storege\obj\Debug\netstandard2.0\Reminder.Storage.dll
-G:\SysFold\Lessons\Project\ProjectTelegramBot\Reminder.Storege\obj\Debug\netstandard2.0\Reminder.Storage.pdb

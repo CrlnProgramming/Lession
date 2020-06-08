@@ -1,0 +1,13 @@
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\bin\Debug\netcoreapp3.1\ConsoleAppEvents.exe
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\bin\Debug\netcoreapp3.1\ConsoleAppEvents.deps.json
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\bin\Debug\netcoreapp3.1\ConsoleAppEvents.runtimeconfig.json
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\bin\Debug\netcoreapp3.1\ConsoleAppEvents.runtimeconfig.dev.json
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\bin\Debug\netcoreapp3.1\ConsoleAppEvents.dll
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\bin\Debug\netcoreapp3.1\ConsoleAppEvents.pdb
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\obj\Debug\netcoreapp3.1\ConsoleAppEvents.csprojAssemblyReference.cache
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\obj\Debug\netcoreapp3.1\ConsoleAppEvents.csproj.CoreCompileInputs.cache
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\obj\Debug\netcoreapp3.1\ConsoleAppEvents.AssemblyInfoInputs.cache
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\obj\Debug\netcoreapp3.1\ConsoleAppEvents.AssemblyInfo.cs
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\obj\Debug\netcoreapp3.1\ConsoleAppEvents.dll
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\obj\Debug\netcoreapp3.1\ConsoleAppEvents.pdb
+G:\SysFold\Lessons\17\HomeWork\ConsoleAppEvents\ConsoleAppEvents\obj\Debug\netcoreapp3.1\ConsoleAppEvents.genruntimeconfig.cache

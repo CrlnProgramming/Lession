@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XxZUbTVy42qj74ZiQDbt5Hb5b7jKpOu2fRnCKRo6ztri2/snGPLPMhB0NiSxDTRGWnsUsz83qBe5ZE3wyIdHtg==",
+  "success": true,
+  "projectFilePath": "G:\\SysFold\\Lessons\\ProjectTelegBot\\Solution\\Reminder.Storage\\Reminder.Storage.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\woodpc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\woodpc\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
