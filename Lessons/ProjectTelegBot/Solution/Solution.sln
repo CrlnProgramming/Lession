@@ -3,11 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Storage", "Reminder.Storage\Reminder.Storage.csproj", "{6EE073B7-1F2E-4AEC-B0DF-0B6D3FF4A0F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reminder.Storage", "Reminder.Storage\Reminder.Storage.csproj", "{6EE073B7-1F2E-4AEC-B0DF-0B6D3FF4A0F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Storoge.Memory", "Reminder.Storoge.Memory\Reminder.Storoge.Memory.csproj", "{777406B4-ABEA-482A-8502-BA10E2AFA4A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reminder.Storoge.Memory", "Reminder.Storoge.Memory\Reminder.Storoge.Memory.csproj", "{777406B4-ABEA-482A-8502-BA10E2AFA4A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Storage.Memory.Tests", "Reminder.Storage.Memory.Tests\Reminder.Storage.Memory.Tests.csproj", "{CD4A12AA-946F-41C7-9DE8-6634711E3D71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reminder.Storage.Memory.Tests", "Reminder.Storage.Memory.Tests\Reminder.Storage.Memory.Tests.csproj", "{CD4A12AA-946F-41C7-9DE8-6634711E3D71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reminder.Domain.Test", "Reminder.Domain\Reminder.Domain.Test.csproj", "{09274DDA-4820-49A2-8E99-ADE23D5B4065}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{76ED38CF-B478-4455-BD7A-9D035E7D09E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MainLogicProject", "MainLogicProject", "{92A04FDB-9610-4F69-AC13-2B33CBF3C554}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Domain", "Reminder.Domain\Reminder.Domain.csproj", "{665ECECA-C447-420B-88F0-4E9883F220CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Storage.WebApi", "Reminder.Storage.WebApi\Reminder.Storage.WebApi.csproj", "{B2D669BF-B294-40CA-90B6-8445ADD6793D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Storage", "Storage", "{BD10DDB5-EF3A-439B-879B-398E2C96E553}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +39,31 @@ Global
 		{CD4A12AA-946F-41C7-9DE8-6634711E3D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD4A12AA-946F-41C7-9DE8-6634711E3D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD4A12AA-946F-41C7-9DE8-6634711E3D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09274DDA-4820-49A2-8E99-ADE23D5B4065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09274DDA-4820-49A2-8E99-ADE23D5B4065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09274DDA-4820-49A2-8E99-ADE23D5B4065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09274DDA-4820-49A2-8E99-ADE23D5B4065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{665ECECA-C447-420B-88F0-4E9883F220CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{665ECECA-C447-420B-88F0-4E9883F220CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{665ECECA-C447-420B-88F0-4E9883F220CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{665ECECA-C447-420B-88F0-4E9883F220CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2D669BF-B294-40CA-90B6-8445ADD6793D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D669BF-B294-40CA-90B6-8445ADD6793D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D669BF-B294-40CA-90B6-8445ADD6793D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D669BF-B294-40CA-90B6-8445ADD6793D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6EE073B7-1F2E-4AEC-B0DF-0B6D3FF4A0F9} = {BD10DDB5-EF3A-439B-879B-398E2C96E553}
+		{777406B4-ABEA-482A-8502-BA10E2AFA4A1} = {BD10DDB5-EF3A-439B-879B-398E2C96E553}
+		{CD4A12AA-946F-41C7-9DE8-6634711E3D71} = {76ED38CF-B478-4455-BD7A-9D035E7D09E8}
+		{09274DDA-4820-49A2-8E99-ADE23D5B4065} = {76ED38CF-B478-4455-BD7A-9D035E7D09E8}
+		{76ED38CF-B478-4455-BD7A-9D035E7D09E8} = {92A04FDB-9610-4F69-AC13-2B33CBF3C554}
+		{665ECECA-C447-420B-88F0-4E9883F220CA} = {92A04FDB-9610-4F69-AC13-2B33CBF3C554}
+		{B2D669BF-B294-40CA-90B6-8445ADD6793D} = {BD10DDB5-EF3A-439B-879B-398E2C96E553}
+		{BD10DDB5-EF3A-439B-879B-398E2C96E553} = {92A04FDB-9610-4F69-AC13-2B33CBF3C554}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {016DE93C-90C8-45B7-87E0-ECF4DAAD2978}

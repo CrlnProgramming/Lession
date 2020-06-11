@@ -94,3 +94,7 @@ G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage.Memory.Tests\obj\De
 G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage.Memory.Tests\obj\Debug\netcoreapp3.1\Reminder.Storage.Memory.Tests.dll
 G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage.Memory.Tests\obj\Debug\netcoreapp3.1\Reminder.Storage.Memory.Tests.pdb
 G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage.Memory.Tests\obj\Debug\netcoreapp3.1\Reminder.Storage.Memory.Tests.genruntimeconfig.cache
+G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage.Memory.Tests\bin\Debug\netcoreapp3.1\Reminder.Storage.dll
+G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage.Memory.Tests\bin\Debug\netcoreapp3.1\Reminder.Storoge.Memory.dll
+G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage.Memory.Tests\bin\Debug\netcoreapp3.1\Reminder.Storoge.Memory.pdb
+G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage.Memory.Tests\bin\Debug\netcoreapp3.1\Reminder.Storage.pdb

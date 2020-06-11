@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2/17AIjgrkjukOcKe3bFUL+F/qud6B7XpIPbxP7+XHYL6vby66RMcH9T69QUsGDSvn6hpu/AU2PT/G52fvaSzg==",
-  "success": false,
+  "dgSpecHash": "VOPtE0BJqQl8SGMJsCKb8zgieZuHcc3E4t23jPAwAvwo1091na0P3wlmfpG4mPhU0G6LBMpG65ZAbK0PBAMJHA==",
+  "success": true,
   "projectFilePath": "G:\\SysFold\\Lessons\\ProjectTelegBot\\Solution\\Reminder.Storoge.Memory\\Reminder.Storoge.Memory.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Проект Reminder.Storage.Memory.Tests несовместим с netstandard2.1 (.NETStandard,Version=v2.1). Проект Reminder.Storage.Memory.Tests поддерживает: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
-      "libraryId": "Reminder.Storage.Memory.Tests",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.1"
-      ]
-    }
-  ]
+  "logs": []
 }

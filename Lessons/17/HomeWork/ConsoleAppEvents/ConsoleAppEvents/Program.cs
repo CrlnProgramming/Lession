@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 
 namespace ConsoleAppEvents
 {
@@ -7,15 +8,12 @@ namespace ConsoleAppEvents
     {
         static void Main(string[] args)
         {
-            const string binaryFileName = "file.txt";
-            var generator = new FileWriterWithProgress();
-            generator.WritingCompleted += OnRandomDataEnd; 
-            generator.WritingPerfoming += OnRandomDate;
-            var RandomBytes = generator.WriteBytes(10, 5);
+           const string binaryFileName = "file.txt";
+           var generator = new FileWriterWithProgress();
+            //generator.WriteBytes += OnRandomDate;
 
-            Console.WriteLine("Random data bytes: {0}", Convert.ToBase64String(RandomBytes));
 
-            File.WriteAllBytes(binaryFileName, RandomBytes);
+            //File.WriteAllBytes(binaryFileName, RandomBytes);
             if (File.Exists(binaryFileName))
             {
                 File.Delete(binaryFileName);
@@ -31,5 +29,21 @@ namespace ConsoleAppEvents
             Console.WriteLine($"Generation DONE");
         }
 
+        private static void DrowingDonwlodeIcon(byte[] data)
+        {
+            Console.WriteLine("[{0}]", new String(' ', data.Length));
+
+            Console.SetCursorPosition(0, Console.CursorTop - 1);
+            for (int process = 0; process < data.Length; process++)
+            {
+                Console.SetCursorPosition(process + 1, Console.CursorTop);
+                Console.Write("|");
+
+                Console.SetCursorPosition(data.Length + 3, Console.CursorTop);
+                Console.Write("{0}% ", process * data.Length);
+                Thread.Sleep(500);
+                Console.ResetColor();
+            }
+        }
     }
 }

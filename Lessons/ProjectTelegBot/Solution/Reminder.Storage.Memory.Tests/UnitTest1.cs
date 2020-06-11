@@ -5,7 +5,7 @@ namespace Reminder.Storage.Memory.Tests
 {
     public class Logic
     {
-            public string FizzBuzz(int number)
+        public string FizzBuzz(int number)
             {
             if (number % 3 == 0 && number % 5 == 0)
             {
@@ -60,4 +60,5 @@ namespace Reminder.Storage.Memory.Tests
             Assert.AreEqual("FizzBazz", result);
         }
     }
+
 }

@@ -5,4 +5,8 @@
 	  <LangVersion>8.0</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Reminder.Storoge.Memory\Reminder.Storoge.Memory.csproj" />
+  </ItemGroup>
+
 </Project>

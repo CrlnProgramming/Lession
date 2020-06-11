@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 
+
 namespace Reminder.Storoge.Memory
 {
     public class ReminderItemStorage : IReminderItemStorage
@@ -14,31 +15,49 @@ namespace Reminder.Storoge.Memory
         }
         public void Add(ReminderItem item)
         {
+            if (item == null) 
+            {
+                throw new ArgumentNullException(nameof(item));
+            }
+            if (_items.ContainsKey(item.Id)) 
+            {
+                throw new ArgumentException(
+                    $"Reminder item with title {item.Title} and id {item.Id} already exists in memory storage");
+            }
             var key = item.Id;
             _items.Add(key, item);
         }
-
-        public void Delete(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
         public ReminderItem Find(Guid id)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Find(DateTimeOffset dateTime)
-        {
-            throw new NotImplementedException();
+            if (id == null) 
+            {
+                throw new ArgumentNullException(nameof(id));
+            }
+            return _items[id];
         }
 
         public ReminderItem[] FindByDateTime(DateTimeOffset dateTime)
         {
-            throw new NotImplementedException();
+            throw new ArgumentNullException();
         }
 
         public void Update(ReminderItem item)
+        {
+            if (item == null) //check for empty object
+            {
+                throw new ArgumentNullException(nameof(item));
+            }
+        }
+        public void Delete(Guid id)
+        {
+            if (id == null) 
+            {
+                throw new ArgumentNullException(nameof(id));
+            }
+            _items.Remove(id);
+        }
+
+        public ReminderItem[] FindBy(ReminderItemFilter filter)
         {
             throw new NotImplementedException();
         }

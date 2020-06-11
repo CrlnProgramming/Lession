@@ -1,57 +1,43 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
-using System.Text;
-using System.Threading;
-
 
 namespace ConsoleAppEvents
 {
-    class FileWriterWithProgress 
+    public class FileWriterWithProgress
     {
         public delegate void WritingPerfomed(int bytesDone, int totalBates);
-        public event EventHandler WritingCompleted;
-        public event WritingPerfomed WritingPerfoming;
 
-        public byte[] WriteBytes(int dataSize, float percentageToFireEvent)
+        public event WritingPerfomed RandomDataGenterating;
+        public event EventHandler<DataStorage> WritingCompleted;
+        public byte[] WriteBytes(byte[] data, float percentageToFireEvent)
         {
             var random = new Random();
-            var data = new byte[dataSize];
-            for(var i = 0; i < data.Length; i++)
+            for (var i = 0; i < data.Length; i++)
             {
                 data[i] = (byte)random.Next(256);
-                
-                if ((i+1) % percentageToFireEvent == 0)
+                if((i+1)%percentageToFireEvent == 0)
                 {
-                    WritingPerfoming(i + 1, data.Length);
-                    Console.WriteLine("[{0}]", new String(' ', data.Length));
-
-                    Console.SetCursorPosition(0, Console.CursorTop - 1);
-                    for (int process = 0; process < data.Length; process++)
-                    {
-                        Console.SetCursorPosition(process + 1, Console.CursorTop);
-                        Console.Write("|");
-
-                        Console.SetCursorPosition(data.Length + 3, Console.CursorTop);
-                        Console.Write("{0}% ", process * data.Length);
-                        Thread.Sleep(500);
-                        Console.ResetColor();
-                    }
+                    RandomDataGenterating(i + 1, data.Length);
                 }
             }
-            WritingCompleted(this, EventArgs.Empty);
-
+            //Console.WriteLine("Random data bytes: {0}", Convert.ToBase64String(RandomBytes));
             return data;
         }
-        public void OnRandomDate(int bytesDone, int totalBates)
+        protected virtual void OnRandomDate(int bytesDone, int totalBytes)
         {
-            WritingPerfoming?.Invoke(bytesDone, totalBates);
+            RandomDataGenterating?.Invoke(bytesDone, totalBytes);
         }
 
-        public void OnRandomDataEnd(object sender, EventArgs e)
+        protected virtual void OnGeneratedCompleted(object sender,byte [] RanomArray)
         {
-            WritingCompleted?.Invoke(sender, e);
+            var args = new DataStorage
+            {
+                storageData = RanomArray
+            };
+            WritingCompleted?.Invoke(sender, args);
         }
-
+        
     }
 }
+    

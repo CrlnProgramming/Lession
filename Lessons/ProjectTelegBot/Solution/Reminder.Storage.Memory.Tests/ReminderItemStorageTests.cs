@@ -1,14 +1,15 @@
 ﻿using NUnit.Framework;
+using Reminder.Storage;
 
 namespace Reminder.Storage.Memory.Tests
 {
-    public class ReminderItemStorageTests
+    public class ReminderItemStorageTests 
     {
         [Test]
         public void Test()
         {
-            var storage = new ReminderItem();
-            storage.Add(null);
+            var storage = new ReminderItemStorageTests();//------
+            
         }
     }
 }
