@@ -1,54 +1,84 @@
 ﻿using System;
-using System.Globalization;
+using System.Net;
 using System.Net.Http;
 using System.Text;
-
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using Reminder.Storage.WebApi.Dto;
 
 namespace Reminder.Storage.WebApi
 {
     public class ReminderItemStorage : IReminderItemStorage
     {
+        private const string EndpointPrefix = "/api/reminders";
         private readonly HttpClient _client;
-        private const string EndpointPrefix = "/api/reminder";
-        public ReminderItemStorage(string endpoint)
-        {
-            _client = new HttpClient()
+        private static readonly JsonSerializerOptions SerializerOptions =
+            new JsonSerializerOptions
             {
-                BaseAddress = new Uri(endpoint)
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             };
+        
+        private static readonly JsonSerializerOptions DeserializerOptions =
+            new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                Converters =
+                {
+                    new JsonStringEnumConverter()
+                }
+            };
+
+        public ReminderItemStorage(string endpoint) :
+            this(new HttpClient { BaseAddress = new Uri(endpoint) })
+        {
         }
+
+        public ReminderItemStorage(HttpClient client)
+        {
+            _client = client;
+        }
+
         public void Add(ReminderItem item)
         {
+            var dto = new ReminderItemDto(item);
+            var payload = JsonSerializer.Serialize(dto, SerializerOptions);
+            var content = new StringContent(payload, Encoding.Default, "application/json");
+            var response = _client.PostAsync(EndpointPrefix, content)
+                .GetAwaiter()
+                .GetResult();
 
-            //_client.PostAsync(EndpointPrefix,content);
-        }
-
-        public void Delete(Guid id)
-        {
-            throw new NotImplementedException();
+            switch (response.StatusCode)
+            {
+                case HttpStatusCode.BadRequest:
+                    throw new ArgumentException("Data was invalid");
+                case HttpStatusCode.Conflict:
+                    throw new ArgumentException("Reminder item with same id exists");
+            }
         }
 
         public ReminderItem Find(Guid id)
         {
-            /*_client.GetAsync();Http get
-            _client.SendAsync();
-            _client.PutAsync();
-            _client.DeleteAsync();
-            _client.PatchAsync();
-           
-            */
-            HttpResponseMessage response = _client.GetAsync($"{EndpointPrefix}{id:N}").GetAwaiter().GetResult();
-            var array = response.Content.ReadAsStringAsync()
+            var response = _client.GetAsync($"{EndpointPrefix}/{id:N}")
                 .GetAwaiter()
                 .GetResult();
 
-            string paylod = response.Content.ReadAsStringAsync().Result;
+            // JSON
+            var payload = response.Content.ReadAsStringAsync()
+                .GetAwaiter()
+                .GetResult();
 
-            //var dto =  JsonSerializer.
-            
+            var dto = JsonSerializer.Deserialize<ReminderItemDto>(payload, DeserializerOptions);
+
+            return new ReminderItem(
+                Guid.Parse(dto.Id),
+                dto.Title,
+                dto.Message,
+                DateTimeOffset.Parse(dto.DateTimeUtc),
+                new User(dto.UserLogin, dto.UserChatId), dto.Status);
+                
         }
 
-        public ReminderItem[] FindBy(ReminderItemFilter filter)
+        public ReminderItem[] FindBy(DateTimeOffset filter)
         {
             throw new NotImplementedException();
         }
@@ -57,5 +87,10 @@ namespace Reminder.Storage.WebApi
         {
             throw new NotImplementedException();
         }
+        public void Delete(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
+
 }

@@ -1,1 +1,1 @@
-Here posting my works,when completed in the "IT Nordic School"
+Here posted my works,when I completed in the "IT Nordic School"

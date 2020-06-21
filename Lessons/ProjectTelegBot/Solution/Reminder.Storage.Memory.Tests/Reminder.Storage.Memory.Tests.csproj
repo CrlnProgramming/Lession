@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Reminder.Storage\Reminder.Storage.csproj" />
+    <ProjectReference Include="..\Reminder.Storoge.Memory\Reminder.Storoge.Memory.csproj" />
   </ItemGroup>
 
 </Project>
