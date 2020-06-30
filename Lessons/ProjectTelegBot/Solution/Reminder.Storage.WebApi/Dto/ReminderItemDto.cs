@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Reminder.Storage.WebApi.Dto
 {
-    //DTO 
-    class ReminderItemDto
-    {
+	// DTO
+	//   Data
+	//   Transfer
+	//   Object
+
+	public class ReminderItemDto
+	{
 		public string Id { get; set; }
 		public string Title { get; set; }
 		public string Message { get; set; }
 		public string DateTimeUtc { get; set; }
 		public string UserLogin { get; set; }
 		public string UserChatId { get; set; }
-		public ReminderItenStatus Status { get; set; }
+		public ReminderItemStatus Status { get; set; }
 
 		public ReminderItemDto()
 		{

@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Reminder.Storoge.Memory\Reminder.Storoge.Memory.csproj" />
+    <ProjectReference Include="..\Reminder.Storage\Reminder.Storage.csproj" />
   </ItemGroup>
 
 </Project>

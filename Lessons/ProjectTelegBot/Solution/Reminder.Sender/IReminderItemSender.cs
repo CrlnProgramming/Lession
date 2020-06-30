@@ -1,7 +1,9 @@
-﻿namespace Reminder.Sender
+﻿using System;
+
+namespace Reminder.Sender
 {
-    public interface IReminderItemSender
-    {
-        void Send(ReminderNotification notification);
-    }
+	public interface IReminderItemSender
+	{
+		void Send(ReminderNotification notification);
+	}
 }

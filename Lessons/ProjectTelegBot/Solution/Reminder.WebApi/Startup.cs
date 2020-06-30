@@ -7,24 +7,23 @@ using Reminder.Storage.Memory;
 
 namespace Reminder.WebApi
 {
-    public class Startup
-    {
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddControllers();
-            services.AddSingleton<IReminderItemStorage, ReminderItemStorage>();
-        }
+	public class Startup
+	{
+		public void ConfigureServices(IServiceCollection services)
+		{
+			services.AddControllers();
+			services.AddSingleton<IReminderItemStorage, ReminderItemStorage>();
+		}
 
-        // This method gets called by the runtime.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+		{
+			if (env.IsDevelopment())
+			{
+				app.UseDeveloperExceptionPage();
+			}
 
-            app.UseRouting();
-            app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());
-        }
-    }
+			app.UseRouting();
+			app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());
+		}
+	}
 }

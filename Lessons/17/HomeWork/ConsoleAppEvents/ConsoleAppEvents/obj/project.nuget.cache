@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W4H0LtBDRyhHLwPC/Vf3pDVryFJG5zlG+yJliLJz9znnb7FPaLupGHQnGZ08mRv8I4Se0p5dAD0ANBWiFHbSug==",
+  "dgSpecHash": "zN9NYIBSIo1xTj5yQuADJlR+U2QO3CWVG1sg9IjcYRt+nh7772bA6S7+jzSHytUqqWtK/SIbtA4jVndEz7g9QA==",
   "success": true,
   "projectFilePath": "G:\\SysFold\\Lessons\\17\\HomeWork\\ConsoleAppEvents\\ConsoleAppEvents\\ConsoleAppEvents.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\woodpc\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

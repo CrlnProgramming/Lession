@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using NUnit.Framework;
 
 namespace Reminder.Storage.Memory.Tests
@@ -107,11 +107,11 @@ namespace Reminder.Storage.Memory.Tests
 		public void GivenCreatedItems_WhenFindByReadyStatus_ShouldReturnEmpty()
 		{
 			var storage = new ReminderItemStorage(
-				CreateReminderItem(datetime: DateTimeOffset.UtcNow, status: ReminderItenStatus.Created),
-				CreateReminderItem(datetime: DateTimeOffset.UtcNow.AddMinutes(-1), status: ReminderItenStatus.Created));
+				CreateReminderItem(datetime: DateTimeOffset.UtcNow, status: ReminderItemStatus.Created),
+				CreateReminderItem(datetime: DateTimeOffset.UtcNow.AddMinutes(-1), status: ReminderItemStatus.Created));
 
 			var result = storage.FindBy(
-				ReminderItemFilter.ByStatus(ReminderItenStatus.Ready)
+				ReminderItemFilter.ByStatus(ReminderItemStatus.Ready)
 			);
 
 			Assert.IsEmpty(result);
@@ -121,10 +121,10 @@ namespace Reminder.Storage.Memory.Tests
 		public void GivenReadyItems_WhenFindByReadyStatus_ShouldReturnElements()
 		{
 			var storage = new ReminderItemStorage(
-				CreateReminderItem(datetime: DateTimeOffset.UtcNow.AddMinutes(-1), status: ReminderItenStatus.Ready));
+				CreateReminderItem(datetime: DateTimeOffset.UtcNow.AddMinutes(-1), status: ReminderItemStatus.Ready));
 
 			var result = storage.FindBy(
-				ReminderItenStatus.ByStatus(ReminderItenStatus.Ready)
+				ReminderItemFilter.ByStatus(ReminderItemStatus.Ready)
 			);
 
 			Assert.IsNotEmpty(result);
@@ -134,12 +134,12 @@ namespace Reminder.Storage.Memory.Tests
 		public void GivenCreatedItems_WhenFindFromNow_ShouldReturnMatchingElements()
 		{
 			var storage = new ReminderItemStorage(
-				CreateReminderItem(datetime: DateTimeOffset.UtcNow.AddSeconds(20), status: ReminderItenStatus.Created),
-				CreateReminderItem(datetime: DateTimeOffset.UtcNow.AddMinutes(-1), status: ReminderItenStatus.Created),
-				CreateReminderItem(datetime: DateTimeOffset.UtcNow.AddMinutes(1), status: ReminderItenStatus.Created)
+				CreateReminderItem(datetime: DateTimeOffset.UtcNow.AddSeconds(20), status: ReminderItemStatus.Created),
+				CreateReminderItem(datetime: DateTimeOffset.UtcNow.AddMinutes(-1), status: ReminderItemStatus.Created),
+				CreateReminderItem(datetime: DateTimeOffset.UtcNow.AddMinutes(1), status: ReminderItemStatus.Created)
 			);
 
-			var result = storage.FindBy(ReminderItemFilter.FrowNow());
+			var result = storage.FindBy(ReminderItemFilter.FromNow());
 
 			Assert.IsNotEmpty(result);
 			Assert.AreEqual(1, result.Length);
@@ -150,7 +150,7 @@ namespace Reminder.Storage.Memory.Tests
 			string title = default,
 			string message = default,
 			DateTimeOffset? datetime = default,
-			ReminderItenStatus? status = default)
+			ReminderItemStatus? status = default)
 		{
 			return new ReminderItem(
 				id ?? Guid.NewGuid(),
@@ -158,7 +158,7 @@ namespace Reminder.Storage.Memory.Tests
 				message ?? "Message",
 				datetime ?? DateTimeOffset.UtcNow,
 				new User("Login", "ChatId"),
-				status ?? ReminderItenStatus.Created);
+				status ?? ReminderItemStatus.Created);
 		}
 	}
 }

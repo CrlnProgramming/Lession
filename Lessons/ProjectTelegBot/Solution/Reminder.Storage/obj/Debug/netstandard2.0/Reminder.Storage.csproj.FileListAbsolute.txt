@@ -1,8 +1,0 @@
-G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage\bin\Debug\netstandard2.0\Reminder.Storage.deps.json
-G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage\bin\Debug\netstandard2.0\Reminder.Storage.dll
-G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage\bin\Debug\netstandard2.0\Reminder.Storage.pdb
-G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage\obj\Debug\netstandard2.0\Reminder.Storage.csprojAssemblyReference.cache
-G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage\obj\Debug\netstandard2.0\Reminder.Storage.AssemblyInfoInputs.cache
-G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage\obj\Debug\netstandard2.0\Reminder.Storage.AssemblyInfo.cs
-G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage\obj\Debug\netstandard2.0\Reminder.Storage.dll
-G:\SysFold\Lessons\ProjectTelegBot\Solution\Reminder.Storage\obj\Debug\netstandard2.0\Reminder.Storage.pdb
